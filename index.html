@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEC Defense — Smart Stadium Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">MEC Defense</div>
+  <ul class="nav-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span class="theme-icon">☀️</span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-image"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">PECI . Universidade de Aveiro · DETI . 2025–26 </p>
+    <h1>Securing Smart Stadium<br><em>Critical Infrastructure</em></h1>
+    <p class="hero-sub">Designing and hardening a Multi-Access Edge Computing platform for smart stadiums — isolating AI sensor traffic from public 5G, backed by a real-time Security Operations Center.</p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <div class="meta-label">Department</div>
+        <div class="meta-value">DETI / UA</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Team</div>
+        <div class="meta-value">6 Members</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Domain</div>
+        <div class="meta-value">Network Security</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <div class="sec-label">Overview</div>
+  <h2 class="sec-title">The Problem </h2>
+  <div class="overview-grid">
+    <div class="overview-body">
+      <p>Modern stadiums have evolved into "Smart Environments" where 5G networks simultaneously serve thousands of connected fans and critical infrastructure — cameras, sensors, and logistics systems.</p>
+      <p>This data is processed locally on a <strong>Multi-Access Edge Computing (MEC)</strong> platform to ensure low latency for real-time safety decisions. The challenge: public fan traffic and sensitive AI processing share the same infrastructure.</p>
+      <p>MEC Defense designs and secures this deployment — ensuring strict separation and automated responses to threats.</p>
+    </div>
+    <div class="objectives">
+      <div class="obj">
+        <span class="obj-n">01</span>
+        <p class="obj-text"><strong>Traffic Segmentation</strong> — Strict isolation between public user traffic and critical sensor data via micro-segmentation.</p>
+      </div>
+      <div class="obj">
+        <span class="obj-n">02</span>
+        <p class="obj-text"><strong>Edge Hardening</strong> — Security controls on edge nodes to prevent lateral movement attacks.</p>
+      </div>
+      <div class="obj">
+        <span class="obj-n">03</span>
+        <p class="obj-text"><strong>Security Command Center</strong> — Centralized SIEM ingesting logs from all edge nodes for real-time visibility.</p>
+      </div>
+      <div class="obj">
+        <span class="obj-n">04</span>
+        <p class="obj-text"><strong>Threat Detection &amp; Response</strong> — Automated rules to detect and block DDoS, unauthorized access, and intrusion attempts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- TEAM -->
+<section id="team">
+  <div class="sec-label">Team</div>
+  <h2 class="sec-title">Who We Are</h2>
+  <div class="team-grid">
+    <div class="member">
+      <div class="avatar"><img src="fotos/jose.jpg" alt="JF" onerror="this.style.display='none';this.parentNode.innerHTML='JF'"></div>
+      <div class="member-name">José Fernandes</div>
+    </div>
+    <div class="member">
+      <div class="avatar"><img src="fotos/diogo_f.jpg" alt="DF" onerror="this.style.display='none';this.parentNode.innerHTML='DF'"></div>
+      <div class="member-name">Diogo Ferreira</div>
+    </div>
+    <div class="member">
+      <div class="avatar"><img src="image/ruben.png" alt="RF" onerror="this.style.display='none';this.parentNode.innerHTML='RF'"></div>
+      <div class="member-name">Rúben Franco</div>
+    </div>
+    <div class="member">
+      <div class="avatar"><img src="image/diogo_c.png" alt="DC" onerror="this.style.display='none';this.parentNode.innerHTML='DC'"></div>
+      <div class="member-name">Diogo Carvalho</div>
+    </div>
+    <div class="member">
+      <div class="avatar"><img src="image/goncalo.jpg" alt="GM" onerror="this.style.display='none';this.parentNode.innerHTML='GM'"></div>
+      <div class="member-name">Gonçalo Martins</div>
+    </div>
+    <div class="member">
+      <div class="avatar"><img src="image/Tiago_Rocha.jpeg" alt="TR" onerror="this.style.display='none';this.parentNode.innerHTML='TR'"></div>
+      <div class="member-name">Tiago Rocha</div>
+    </div>
+  </div>
+
+  <div class="supervisors">
+    <div class="sup-header">Supervisors</div>
+    <div class="sup-row">
+      <span class="sup-name">Prof. Daniel Corujo</span>
+      <span class="sup-email"><span class="__cf_email__" data-cfemail="9ffbfcf0edeaf5f0dfeafeb1efeb">dcorujo@ua.pt</span></a></span>
+    </div>
+    <div class="sup-row">
+      <span class="sup-name">Prof. Vitor Cunha</span>
+      <span class="sup-email"><span class="__cf_email__" data-cfemail="f4829d809b8697819a9c95b48195da8480">vitorcunha@ua.pt</span></a></span>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<hr />
+
+<!-- STACK -->
+<div id="stack">
+  <div class="inner">
+    <div class="sec-label">Tech Stack</div>
+    <h2 class="sec-title">Technologies</h2>
+    <div class="stack-grid">
+      <div class="stack-item"><div class="stack-cat">Orchestration</div><div class="stack-name">Docker / Kubernetes</div></div>
+      <div class="stack-item"><div class="stack-cat">IDS / IPS</div><div class="stack-name">Suricata &amp; Zeek</div></div>
+      <div class="stack-item"><div class="stack-cat">SIEM</div><div class="stack-name">Wazuh </div></div>
+      <div class="stack-item"><div class="stack-cat">VPN / Tunneling</div><div class="stack-name">WireGuard / IPsec</div></div>
+      <div class="stack-item"><div class="stack-cat">Messaging</div><div class="stack-name">Apache Kafka</div></div>
+      <div class="stack-item"><div class="stack-cat">NFV Management</div><div class="stack-name">OSM MANO</div></div>
+      <div class="stack-item"><div class="stack-cat">Observability</div><div class="stack-name">Prometheus</div></div>
+      <div class="stack-item"><div class="stack-cat">Runtime Security</div><div class="stack-name">Falco</div></div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="sec-label">Roadmap</div>
+  <h2 class="sec-title">Project Timeline</h2>
+  <div class="timeline">
+    <div class="ms">
+      <div class="ms-tag">M1</div>
+      <div class="ms-head">
+        <span class="ms-title">Inception</span>
+        <span class="ms-status done"><span class="ms-dot"></span>Completed</span>
+      </div>
+      <ul class="ms-items">
+        <li>Basic MEC network setup and configuration</li>
+        <li>SIEM evaluation and initial architecture design</li>
+      </ul>
+    </div>
+    <div class="ms">
+      <div class="ms-tag">M2</div>
+      <div class="ms-head">
+        <span class="ms-title">Elaboration</span>
+        <span class="ms-status done"><span class="ms-dot"></span>Completed</span>
+      </div>
+      <ul class="ms-items">
+        <li>Implement log collection and sharing software solutions</li>
+        <li>Create a demo app to simulate video traffic​</li>
+      </ul>
+    </div>
+    <div class="ms">
+      <div class="ms-tag">M3</div>
+      <div class="ms-head">
+        <span class="ms-title">Construction</span>
+        <span class="ms-status done"><span class="ms-dot"></span>Completed</span>
+      </div>
+      <ul class="ms-items">
+        <li>Wazuh SIEM + Zeek/Suricata integration with Prometheus metrics</li>
+        <li>Automated alerting via Discord/Slack</li>
+        <li>DEMO</li>
+      </ul>
+    </div>
+    <div class="ms">
+      <div class="ms-tag">M4</div>
+      <div class="ms-head">
+        <span class="ms-title">Transition</span>
+        <span class="ms-status done"><span class="ms-dot"></span>Completed</span>
+      </div>
+      <ul class="ms-items">
+        <li>Falco container security and VXLAN network segmentation</li>
+        <li>DEMO</li>
+        <li>Students@DETI showcase and final report submission</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<!-- RESOURCES -->
+<section id="resources">
+  <div class="sec-label">Resources</div>
+  <h2 class="sec-title">Reports &amp; Links</h2>
+  <div class="resources-grid">
+    <a href="presentations/Presentation.pdf" class="res-card">
+      <div class="res-icon">🎞️</div>
+      <div>
+        <div class="res-label">Presentation</div>
+        <div class="res-title">M1 — Inception</div>
+        <div class="res-desc">Project context, goals, and initial tech stack overview.</div>
+      </div>
+    </a>
+    <a href="presentations/PresentationM2.pdf" class="res-card">
+      <div class="res-icon">📄</div>
+      <div>
+        <div class="res-label">Presentation</div>
+        <div class="res-title">M2 — Elaboration</div>
+        <div class="res-desc">Architecture decisions, implementation notes.</div>
+      </div>
+    </a>
+    <a href="presentations/PresentationM3.pdf" class="res-card">
+      <div class="res-icon">🎞️</div>
+      <div>
+        <div class="res-label">Presentation</div>
+        <div class="res-title">M3 — Construction</div>
+        <div class="res-desc">Architecture, DEMO, and preliminary results.</div>
+      </div>
+    </a>
+    <a href="presentations/PresentationM4.pdf" class="res-card">
+      <div class="res-icon">🎞️</div>
+      <div>
+        <div class="res-label">Presentation</div>
+        <div class="res-title">M4 — Transition</div>
+        <div class="res-desc">Architecture, DEMO, and preliminary results.</div>
+      </div>
+    </a>
+    <a href="#" class="res-card">
+      <div class="res-icon">💻</div>
+      <div>
+        <div class="res-label">Repository</div>
+        <div class="res-title">GitHub — Source Code</div>
+      </div>
+    </a>
+    <a href="#" class="res-card">
+      <div class="res-icon">📄</div>
+      <div>
+        <div class="res-label">Report</div>
+        <div class="res-title">Report</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<hr />
+</section>
+
+<hr />
+
+<footer>
+  <span class="f-logo">MEC Defense</span>
+  <span>© 2026 Universidade de Aveiro, DETI</span>
+  <span>PECI</span>
+</footer>
+
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const icon   = toggle.querySelector('.theme-icon');
+  const root   = document.documentElement;
+
+  const saved = localStorage.getItem('theme') || 'dark';
+  root.setAttribute('data-theme', saved);
+  icon.textContent = saved === 'dark' ? '🔆' : '🌒';
+
+  toggle.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme');
+    const next    = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    icon.textContent = next === 'dark' ? '🔆' : '🌒';
+  });
+</script>
+</body>
+</html>
