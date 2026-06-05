@@ -470,6 +470,10 @@ h1 em {
 .res-title { font-size: 0.88rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
 .res-desc { font-size: 0.8rem; color: var(--muted); font-weight: 300; }
 
+.resources-grid .res-card:last-child {
+  grid-column: 1 / -1;
+}
+
 /* ── LEGAL ───────────────────────────────────── */
 .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .legal-card { border: 1px solid var(--border); padding: 1.5rem; }
